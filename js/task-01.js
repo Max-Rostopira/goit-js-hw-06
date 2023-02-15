@@ -1,58 +1,21 @@
 "use strict";
-// 01-module-02-lesson
-"use strict";
+const totalCategoriesEl = document.querySelectorAll(".item");
+console.log(`Number of categories: ${totalCategoriesEl.length}`);
 
-//1. Напишите цикл, который выводит в консоль
-//числа от max до min по убыванию
-// Выведите в консоль всех четных чисел от min до max
-// const max = 50;
-// const min = 23;
+const animalCategoriesEl = document.querySelectorAll('h2');
+console.log(`Category: ${animalCategoriesEl[0].textContent}`);
 
+const totalAnimalEl = totalCategoriesEl[0].querySelectorAll('ul > li')
+console.log(`Elements: ${totalAnimalEl.length}`)
 
-//2. Напишіть код, який запитуватиме
-//Логін за допомогою prompt і логувати результат
-//В консоль браузера
-// введені данні можуть бути будь якого формату(великі і малі літери)
+const productsCategoriesEl = document.querySelectorAll('h2');
+console.log(`Category: ${productsCategoriesEl[1].textContent}`);
 
-//Якщо відвідувач вводить "адмін",
-//то prompt запитує пароль.
-//Якщо нічого не ввели або натиснута клавіша Esc
-//Вивести рядок "Скасовано"
-//  Інакше вивести рядок "Я вас не знаю"
+const ProductsAnimalEl = totalCategoriesEl[1].querySelectorAll('ul > li')
+console.log(`Elements: ${ProductsAnimalEl.length}`)
 
-//Пароль перевіряти так:
-//Якщо введено пароль "Я головний",
-//то вивести рядок "Здрастуйте!"
-//інакше виводити рядок "Невірний пароль!"
+const TechnologiesCategoriesEl = document.querySelectorAll('h2');
+console.log(`Category: ${TechnologiesCategoriesEl[2].textContent}`);
 
-
-// 3. Рядок, що складається з символів, наприклад, "abcde".
-// Перевірте, чи перший символ цього рядка - це буква "a".
-// Якщо так - логуйте  "так", інакше виведіть "ні".
-
-// function str (string,firstLetter) {
-
-    
-// }
-// str("fsdccwdcver","g")
-
-// 4.Написати програму розрахунку об'єму циліндра, всі дані (крім числа PI) вводяться з клавіатури руками. (Число Пі в js виглядає так: Math.PI). Також потрібно вивести інформацію у такому вигляді:
-//**************
-
-// Об'єм циліндра з площею основи *S* (вивіть значення), радіусом *R* та висотою *H* дорівнює:
-
-//--------------------
-
-// V = результат.
-
-// -------------------
-
-// end.
-
-// P.S. Усі зірочки та рисочки потрібно намалювати. Використати (document.write())
-
-// Задача 4. Порахувати сумму непарних чисел от 0 до 250.
-
-function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  };
+const TechnologiesAnimalEl = totalCategoriesEl[2].querySelectorAll('ul > li')
+console.log(`Elements: ${TechnologiesAnimalEl.length}`)
