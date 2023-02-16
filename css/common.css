@@ -22,3 +22,10 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.task3{
+  background-color: teal;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}

@@ -9,19 +9,24 @@ const ingredients = [
 ];
 
 
-const ingredientsList = document.querySelector('#ingredients');
+const listEl = document.querySelector('#ingredients');
 
-let ingredientsEls = [];
 
-for (let ingredient of ingredients) {
-  let listEl = document.createElement('li');
-  listEl.classList.add('item');
-  listEl.innerHTML = ingredient;
-  ingredientsEls.push(listEl);
-}
+const ingredientsEls = ingredients.reduce((acc, item) => acc + `<li>${item}</li>`, '');
 
-ingredientsList.append(...ingredientsEls);
-console.log(ingredientsList);
+listEl.insertAdjacentHTML('afterbegin', ingredientsEls);
+
+// let ingredientsEls = [];
+
+// for (let ingredient of ingredients) {
+//   let listEl = document.createElement('li');
+//   listEl.classList.add('item');
+//   listEl.innerHTML = ingredient;
+//   ingredientsEls.push(listEl);
+// }
+
+// ingredientsList.append(...ingredientsEls);
+// console.log(ingredientsList);
 
 
 
