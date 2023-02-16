@@ -17,12 +17,6 @@ const imagesListEl = document.querySelector('.gallery');
 
 imagesListEl.classList.add('task3')
 
-// imagesListEl.style.backgroundColor = 'teal';
-// imagesListEl.style.display = 'flex';
-// imagesListEl.style.gap = '50px';
-// imagesListEl.style.listStyleType = 'none';
-
-
 const makeGalleryCard = ({ url, alt, width = 300, height = 300 }) => {
   return `<li>
   <img src="${url}" alt="${alt}" width="${width}" height="${height}"/>
